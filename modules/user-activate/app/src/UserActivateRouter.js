@@ -8,5 +8,7 @@ module.exports = {
 
     webRouter.get('/user/activate', UserActivateController.activateAccountPage)
     AuthenticationController.addEndpointToLoginWhitelist('/user/activate')
+    webRouter.get('/user/sso', UserActivateController.ssoAccountPage)
+    AuthenticationController.addEndpointToLoginWhitelist('/user/sso')
   },
 }
